@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+    <div class="container">
+        <h3>Добавить достижение ученика</h3>
+        <div class="col-md-5 mb-3" style="margin-left: -15px">
+            <label for="date">Дата сегодня {{ data }}</label>
+            <input class="form-control" id="date" name="date" width="30%" maxlength="5" placeholder="Введите дату">
+            <small class="form-text text-muted">Например: 27-05-21</small>
+        </div>
+            <div class="col-md-5 mb-3" style="margin-left: -15px">
+                <select class="custom-select d-block w-70" id="puple" name="puple" required>
+                    <option value="">Выберите фамилию ученика</option>
+                    {% for puple in puples: %}
+                        <option>{{ puple }}</option>
+                    {% endfor %}
+                </select>
+                <div class="invalid-feedback">
+                    Вы не выбрали фамилию.
+                </div>
+            </div>
+        <div class="col-md-5 mb-3" style="margin-left: -15px">
+            <input class="form-control" id="win_place" name="win_place" width="30%" maxlength="5" placeholder="Выигранное место">
+        </div>
+        <br>
+        <textarea class="form-control" id="description" name="description" rows="3" placeholder="Описание достижения..."></textarea>
+        <br>
+        <div class="col-md-5 mb-3" style="margin-left: -15px">
+        <input type="file" id="photo" name="file">
+        </div>
+        <input type="submit" class="btn btn-primary" value="Добавить">
+    </div>
+</form>
+
+
+</body>
+<style>
+    body {
+        background-size: cover;
+        color: black;
+    }
+</style>
+</html>

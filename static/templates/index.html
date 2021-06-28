@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="nav">
+                    <div class="content auth-button">
+                        <button id="auth-btn" class="modal-button_open">
+                            Вход
+                        </button>
+                </div>
+                <div class='ul-li_s'>
+
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="">
+                                Общий рейтинг
+                            </a>
+                        </li>
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="">
+                                    Для учителей
+                                </a>
+                            </li>
+                            <ul class="nav-list">
+                                <li class="nav-item">
+                                    <a href="">
+                                        О нас
+                                    </a>
+                                </li>
+                                <ul class="nav-list">
+                                    <li class="nav-item">
+                                        <a href="">
+                                            Информация ученика
+                                        </a>
+                                    </li>
+                                    <div class="modal" id="modal1">
+                                        <span class="close">&times;</span>
+                                        <div class="modal_content modal_content-in">
+                                            <div class="container-signin">
+                                                <form class="form-signin">
+                                                    <h2 class="form-signin-heading">Вход</h2>
+                                                    <input type="text" class="input-block-level" placeholder="Логин">
+                                                    <input type="password" class="input-block-level"
+                                                        placeholder="Пароль">
+                                                    </label>
+                                                    <button class="btn btn-primary" type="submit">Войти</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="modal" id="modal2">
+
+                                        <div class="modal_content modal_content-up">
+                                            <div class="container-signup">
+                                                <form class="form-signup">
+                                                    <h2 class="form-signup-heading">Регистрация</h2>
+                                                    <input type="text" class="input-block-level" placeholder="Логин">
+                                                    <input type="password" class="input-block-level"
+                                                        placeholder="Пароль">
+                                                    <input type="password" class="input-block-level"
+                                                        placeholder="Повторите пароль">
+                                                    </label>
+                                                    <button class="btn btn-primary" type="submit">Войти</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-cards container">
+            <ul class='card_ul'>
+                <li class="card_li card-add-student" id='card2'>
+                    <div class="container">
+                        <p class="add-student-item">Добавить ученика</p>
+                        <button class="btn btn-primary" type="submit">Добавить</button>
+                        <img src="./img/add-puple.png" alt="" class="add-puple">
+                </li>
+                <br>
+                <li class="card_li card-add-achievements" id='card1'>
+                    <div class="container">
+                        <p class="add-achievements-item">Добавить достижение ученика</p>
+                        <button class="btn btn-primary" type="submit">Добавить</button>
+                        <img src="./img/add-achievements.png" alt="" class="add-achievements">
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
